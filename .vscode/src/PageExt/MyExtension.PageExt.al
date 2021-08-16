@@ -1,5 +1,5 @@
-/*
-pageextension 50850 "MyExtension" extends "G/L Registesr"
+
+pageextension 50850 "MyExtension" extends "G/L Registers"
 {
 
     actions
@@ -23,4 +23,3 @@ pageextension 50850 "MyExtension" extends "G/L Registesr"
         }
     }
 }
-*/

@@ -1,21 +1,14 @@
-/*
+
 codeunit 50850 "Fix"
 {
     trigger OnRun()
     begin
-        createSalesPerson(56);
+        processStuff();
     end;
 
-    local procedure createSalesPerson(salespersonCode: Integer)
+    local procedure processStuff()
     var
-        SalesPerson: Record "Salesperson/Purchaser";
     begin
-        SalesPerson.Init();
-        SalesPerson.Code := FORMAT(salespersonCode);
-        SalesPerson."MBC ICG Id" := salespersonCode;
-        SalesPerson.Insert();
 
-        Message('Created!');
     end;
 }
-*/
