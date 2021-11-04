@@ -2,7 +2,7 @@
   "id": "34ce8ad0-0c51-45f5-8755-e3be5d9f9d7c",
   "name": "Fixes",
   "publisher": "Default publisher",
-  "version": "1.0.0.2",
+  "version": "1.0.0.5",
   "brief": "kk",
   "description": "kk",
   "privacyStatement": "https://www.im-projects.com/inicio/",
@@ -14,6 +14,14 @@
   "platform": "1.0.0.0",
   "application": "18.0.0.0",
   "features": ["TranslationFile"],
+  "dependencies": [
+    {
+      "id": "bb8ed76d-86fd-4b46-af9e-11454b2e9302",
+      "publisher": "IM-PROJECTS",
+      "name": "ICG Integration",
+      "version": "1.0.0.68"
+    }
+  ],
   "idRanges": [
     {
       "from": 50850,
