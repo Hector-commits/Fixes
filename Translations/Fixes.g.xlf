@@ -3,15 +3,15 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="Fixes">
     <body>
       <group id="body">
-        <trans-unit id="PageExtension 18652612 - Action 1448223791 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2393537757">
+        <trans-unit id="PageExtension 4010446921 - Action 1448223791 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2393537757">
           <source>Fix Payment</source>
           <note from="Developer" annotates="general" priority="2">ESP="Fix Payment"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension  - Action FixPayment - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Cust Ledger Entries Ext - Action FixPayment - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 18652612 - Action 1448223791 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2393537757">
+        <trans-unit id="PageExtension 4010446921 - Action 1448223791 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2393537757">
           <source>Fix Payment</source>
           <note from="Developer" annotates="general" priority="2">ESP="Fix Payment"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension  - Action FixPayment - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Cust Ledger Entries Ext - Action FixPayment - Property Caption</note>
         </trans-unit>
       </group>
     </body>
