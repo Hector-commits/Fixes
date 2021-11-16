@@ -1,0 +1,12 @@
+#ignore folder
+.alcache/
+.alpackages/
+.altemplates/
+.vscode/
+.codeAnalysis/
+
+#ignore .app file
+*.app
+*.xlf
+*.rest
+*.zip
