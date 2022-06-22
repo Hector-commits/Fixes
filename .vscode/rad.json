@@ -1,1 +1,1 @@
-﻿{"Added":[],"Modified":[],"Removed":[]}
+﻿{"Added":[{"Id":50851,"Kind":16,"Name":"MyExtension2","PackagePath":"/src/.vscode/src/PageExt/MyExtension2.PageExt.al"},{"Id":50850,"Kind":11,"Name":"Fix","PackagePath":"/src/.vscode/src/Codeunit/Fix.codeunit.al"}],"Modified":[],"Removed":[{"Id":50850,"Kind":16,"Name":"MBC ICG PCU Ext","PackagePath":"/src/src/PageExt/MBCICGPCUExt.PageExt.al"},{"Id":0,"Kind":11,"Name":"_symbolcache","PackagePath":"/src/.vscode/temp-al-proxy.al"}]}

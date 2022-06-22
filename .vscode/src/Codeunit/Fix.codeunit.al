@@ -1,21 +1,30 @@
-/*
+
 codeunit 50850 "Fix"
 {
+
+    Permissions = tabledata 1205 = md, tabledata 1206 = md;
     trigger OnRun()
     begin
-        createSalesPerson(56);
+        removeStuff();
     end;
 
-    local procedure createSalesPerson(salespersonCode: Integer)
+    local procedure removeStuff()
     var
-        SalesPerson: Record "Salesperson/Purchaser";
+        CrTrReg: Record "Credit Transfer Register";
+        CrTrEnt: Record "Credit Transfer Entry";
     begin
-        SalesPerson.Init();
-        SalesPerson.Code := FORMAT(salespersonCode);
-        SalesPerson."MBC ICG Id" := salespersonCode;
-        SalesPerson.Insert();
+        CrTrEnt.Reset();
+        CrTrEnt.SetRange("Credit Transfer Register No.", 466, 467);
+        if CrTrEnt.FindSet() then
+            repeat
+                CrTrEnt.Delete();
+            until CrTrEnt.Next() = 0;
 
-        Message('Created!');
+        CrTrReg.Reset();
+        CrTrReg.SetRange("No.", 466, 467);
+        if CrTrReg.FindSet() then
+            repeat
+                CrTrReg.Delete();
+            until CrTrReg.Next() = 0;
     end;
 }
-*/
