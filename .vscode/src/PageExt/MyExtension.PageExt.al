@@ -1,23 +1,23 @@
 
-pageextension 50850 "MyExtension" extends "G/L Registers"
+pageextension 50850 "MyExtension" extends "MBC ICG Cashing Up"
 {
 
     actions
     {
-        addafter("Delete Empty Registers")
+        addafter("Post All")
         {
             action(Fix)
             {
                 Image = Debug;
-                ToolTip = 'Fix', comment = 'ESP="Arreglar!"';
-                Caption = 'Fix!', Comment = 'ESP="Arreglar!"';
+                ToolTip = 'Debug', comment = 'ESP="Debug"';
+                Caption = 'Debug', Comment = 'ESP="Debug"';
                 ApplicationArea = All;
 
                 trigger OnAction()
                 var
-                    Fix: Codeunit Fix;
+                    Debug: Codeunit "Debuging ICG";
                 begin
-                    Fix.Run();
+                    Debug.PostCashingUp(Rec);
                 end;
             }
         }

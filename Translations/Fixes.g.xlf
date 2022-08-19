@@ -3,14 +3,89 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="Fixes">
     <body>
       <group id="body">
-        <trans-unit id="PageExtension 4142435239 - Action 1976699625 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1739090986">
-          <source>Fix</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Arreglar!"</note>
+        <trans-unit id="Codeunit 3362951736 - NamedType 492024454" size-unit="char" translate="yes" xml:space="preserve">
+          <source>P-</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Debuging ICG - NamedType Text50000Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3362951736 - NamedType 623520869" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice Payment %1.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Pago %1"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Debuging ICG - NamedType Text50001Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3362951736 - NamedType 3817913796" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Difference between charges and total simplified invoices</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Difer. entre cargos y el total de fras. simplif."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Debuging ICG - NamedType Text50002Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3362951736 - NamedType 3785490977" size-unit="char" translate="yes" xml:space="preserve">
+          <source>R-</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Debuging ICG - NamedType Text50005Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3362951736 - NamedType 1963759360" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit Memo Refund %1.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Reembolso %1"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Debuging ICG - NamedType Text50006Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3362951736 - NamedType 658535199" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Too much difference of amont from del cuadre de la factura de la tienda %1, caja %2, z %3,  importe %4.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Demasiada diferencia en el importe del cuadre de la factura de la tienda %1, caja %2, z %3,  importe %4."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Debuging ICG - NamedType Text50007Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3362951736 - NamedType 3116486094" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Confirm register closeout %1 from POS %2 of shop %3?</source>
+          <note from="Developer" annotates="general" priority="2">Confirma que desea registrar el cierre %1 del TPV %2 de la tienda %3?</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Debuging ICG - NamedType Text50008Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3362951736 - NamedType 4284178717" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cashing Up imported.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Cierre caja ya importado."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Debuging ICG - NamedType Text50010Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3362951736 - NamedType 3047661694" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The treasury cannot be empty</source>
+          <note from="Developer" annotates="general" priority="2">ESP="La tesorería no puede estar vacía"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Debuging ICG - NamedType Text50011Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3362951736 - NamedType 1130455643" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Too much difference between sales on ICG and BC on POS %1, closeout %2, z %3,  amount %4.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Demasiada diferencia entre ventas ICG y BC en la tienda %1, caja %2, z %3,  importe %4."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Debuging ICG - NamedType Text50012Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3362951736 - NamedType 636269244" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 %2 %3 %4 has invoiced lines. Closing up must be processed manually.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="%1 %2 %3 %4 tiene líneas facturadas. Debe procederse al registro manual del cierre"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Debuging ICG - NamedType Text50013Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3362951736 - Method 3848416390 - NamedType 2023265171" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document %1 not posted!</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Documento %1 no ha sido registrado!"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Debuging ICG - Method getCashingUpCustNo - NamedType DocumentNotPostedLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3362951736 - Method 3132573967 - NamedType 1196336482" size-unit="char" translate="yes" xml:space="preserve">
+          <source>There are outstanding tickets to be processed.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Existen tickets pendientes de procesar."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Debuging ICG - Method ValidateOpenTickets - NamedType Text001Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3362951736 - Method 3132573967 - NamedType 1753513791" size-unit="char" translate="yes" xml:space="preserve">
+          <source>There are outstanding sales to be posted.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Existen ventas pendientes de registrar."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Debuging ICG - Method ValidateOpenTickets - NamedType Text002Lbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3362951736 - Method 3132573967 - NamedType 3779895200" size-unit="char" translate="yes" xml:space="preserve">
+          <source>There are outstanding sales to be invoiced.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Existen ventas pendientes de facturar."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Debuging ICG - Method ValidateOpenTickets - NamedType Text003Lbl</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4142435239 - Action 1976699625 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 99923191">
+          <source>Debug</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Debug"</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension MyExtension - Action Fix - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 4142435239 - Action 1976699625 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1739090986">
-          <source>Fix!</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Arreglar!"</note>
+        <trans-unit id="PageExtension 4142435239 - Action 1976699625 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 99923191">
+          <source>Debug</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Debug"</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension MyExtension - Action Fix - Property Caption</note>
         </trans-unit>
       </group>
