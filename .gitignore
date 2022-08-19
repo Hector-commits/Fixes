@@ -9,3 +9,7 @@
 *.app
 *.xlf
 *.rest
+extensionsPermissionSet.xml
+Renum.csv
+scripts/status.ps1
+scripts/upload.ps1
