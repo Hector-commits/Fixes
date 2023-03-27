@@ -2,7 +2,18 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" source-language="en-US" target-language="en-US" original="Fixes">
     <body>
-      <group id="body" />
+      <group id="body">
+        <trans-unit id="PageExtension 1976699625 - Action 994659677 - Method 1377591017 - NamedType 4191917654" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 1976699625">
+          <source>Se ha encontrado ruta errónea desde %1 -&gt; hasta %2. ¿Quiere eliminarla?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Fix - Action Delete Routes - Method OnAction - NamedType DeleteRouteLbl</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4142435239 - Field 2942978651 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1837124963">
+          <source>New Code</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nuevo Código"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension MyExtension - Field New Code - Property Caption</note>
+        </trans-unit>
+      </group>
     </body>
   </file>
 </xliff>
