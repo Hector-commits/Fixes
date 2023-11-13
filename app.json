@@ -15,7 +15,12 @@
   "application": "18.0.0.0",
   "features": ["TranslationFile"],
   "dependencies": [
-
+    {
+      "id": "b9004ab0-1c46-4407-84c2-ad28d014afe9",
+      "name": "IM Warehouse",
+      "publisher": "IM-PROJECTS",
+      "version": "1.0.0.87"
+    }
   ],
   "idRanges": [
     {
