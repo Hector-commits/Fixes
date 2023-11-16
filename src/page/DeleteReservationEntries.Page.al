@@ -1,5 +1,8 @@
 page 50859 "Delete Reservation Entries"
 {
+    UsageCategory = Lists;
+    ApplicationArea = All;
+    Caption = 'Delete Reservation Entries', Comment = 'ESP="Elimina mov. reserva"';
     PageType = List;
     SourceTable = "Reservation Entry";
 
