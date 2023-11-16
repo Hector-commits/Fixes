@@ -5,6 +5,22 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "sandboxmarket",
+            "type": "al",
+            "request": "launch",
+            "tenant": "0d7ba498-5e81-40e0-92f1-7b1759a706fc",
+            "environmentType": "Sandbox",
+            "environmentName": "sandboxmarket",
+            "startupObjectId": 22,
+            "breakOnError": true,
+            "breakOnRecordWrite": false,
+            "launchBrowser": true,
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "longRunningSqlStatementsThreshold": 500,
+            "numberOfSqlStatements": 10
+        },
+        {
             "name": "Publish: Microsoft cloud sandbox",
             "type": "al",
             "request": "launch",
