@@ -10,6 +10,6 @@
 *.xlf
 *.rest
 extensionsPermissionSet.xml
-Renum.csv
+Remun.csv
 scripts/status.ps1
 scripts/upload.ps1
