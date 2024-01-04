@@ -5,14 +5,51 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "snapshotInitialize: Microsoft production cloud",
+            "name": "Publish: Microsoft cloud sandbox",
             "type": "al",
-            "request": "snapshotInitialize",
-            "environmentType": "Production",
-            "environmentName": "production",
-            "breakOnNext": "WebClient",
-            "executionContext": "DebugAndProfile"
+            "request": "launch",
+            "environmentType": "Sandbox",
+            "environmentName": "sandboxEDV",
+            "startupObjectId": 22,
+            "breakOnError": true,
+            "breakOnRecordWrite": false,
+            "launchBrowser": true,
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "longRunningSqlStatementsThreshold": 500,
+            "numberOfSqlStatements": 10
+        },
+        {
+            "name": "Publish: Microsoft cloud sandbox",
+            "type": "al",
+            "request": "launch",
+            "environmentType": "Sandbox",
+            "environmentName": "sandbox270721",
+            "breakOnError": true,
+            "breakOnRecordWrite": false,
+            "launchBrowser": true,
+            "startupObjectType": "Report",
+            "startupObjectId": 50850,
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "longRunningSqlStatementsThreshold": 500,
+            "numberOfSqlStatements": 10
+        },
+        {
+            "name": "Your own server",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "OnPrem",
+            "server": "http://myCont",
+            "serverInstance": "BC",
+            "authentication": "UserPassword",
+            "startupObjectId": 22,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "tenant": "default"
         }
-
     ]
 }

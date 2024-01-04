@@ -15,36 +15,12 @@
   "application": "18.0.0.0",
   "features": ["TranslationFile"],
   "dependencies": [
-    {
-      "id": "97e9514f-c63f-4c56-8582-0fd9adadedf3",
-      "publisher": "IM-PROJECTS",
-      "name": "Schemas",
-      "version": "1.0.0.5"
-  },   
-  {
-      "id": "dd01c326-9558-463f-b6c3-50cbcdbfed8d",
-      "publisher": "IM-PROJECTS",
-      "name": "BASE",
-      "version": "1.0.0.0"
-  },     
-  {
-      "id": "0b094f54-c2e4-44b5-a322-4ba7cc32a150",
-      "publisher": "IM-PROJECTS",
-      "name": "Documents IC",
-      "version": "1.0.0.0"
-  },
-  {
-    "id":  "124d9570-63f0-4872-ae16-da87d0be91b3",
-    "name":  "SGA Integration",
-    "publisher":  "IM-PROJECTS",
-    "version":  "1.0.1.48"
-  }
 
   ],
   "idRanges": [
     {
-      "from": 50999,
-      "to": 50999
+      "from": 50850,
+      "to": 50859
     }
   ],
   "contextSensitiveHelpUrl": "https://Test_salesLine.com/help/",
