@@ -5,6 +5,15 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "PRODUCTION",
+            "type": "al",
+            "request": "snapshotInitialize",
+            "environmentType": "Production",
+            "environmentName": "production",
+            "breakOnNext": "WebClient",
+            "executionContext": "DebugAndProfile"
+        },
+        {
             "name": "Publish: Microsoft cloud sandbox",
             "type": "al",
             "request": "launch",
