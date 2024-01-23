@@ -44,6 +44,8 @@ pageextension 50999 "LAB SGA Export Mg Page Ext" extends "SGA Export Management"
         repeat
             Location.Get(ItemLedgerEntry."Location Code");
 
+            Clear(JsonObjBody);
+
             JsonObjBody.Add('CodigoEmpresa', SGASetup."SGA Company Code");
             JsonObjBody.Add('CodigoDelegacion', '01');
             JsonObjBody.Add('NumDocERP', ItemLedgerEntry."Document No.");
