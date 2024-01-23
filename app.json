@@ -2,7 +2,7 @@
   "id": "34ce8ad0-0c51-45f5-8755-e3be5d9f9d7c",
   "name": "Fixes",
   "publisher": "Debugging",
-  "version": "1.0.0.2",
+  "version": "1.0.0.16",
   "brief": "Debugging",
   "description": "Debugging",
   "privacyStatement": "https://www.im-projects.com/inicio/",
@@ -19,8 +19,8 @@
   ],
   "idRanges": [
     {
-      "from": 50850,
-      "to": 50859
+      "from": 50999,
+      "to": 50999
     }
   ],
   "contextSensitiveHelpUrl": "https://Test_salesLine.com/help/",
