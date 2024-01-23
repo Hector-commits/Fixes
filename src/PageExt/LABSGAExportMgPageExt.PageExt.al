@@ -5,10 +5,10 @@ pageextension 50999 "LAB SGA Export Mg Page Ext" extends "SGA Export Management"
     {
         addafter("Show Request")
         {
-            action(MarkPurchaseOrderLinesAsExported)
+            action("Show Request Advanced")
             {
                 ApplicationArea = All;
-                Caption = 'Mark Purchase Order Lines as Exported';
+                Caption = 'Show Request Advanced';
                 Promoted = true;
                 PromotedCategory = Process;
                 Image = Debug;
@@ -17,55 +17,59 @@ pageextension 50999 "LAB SGA Export Mg Page Ext" extends "SGA Export Management"
 
                 trigger OnAction()
                 begin
-                    if not confirm('Are you sure you want to mark the purchase order lines as exported?') then
-                        exit;
-
-                    PostiOrdenPurchaseLines(Rec)
+                    PrintAssemblyOrder(Rec);
                 end;
             }
         }
     }
-
-    local procedure PostiOrdenPurchaseLines(LABSGAExport: Record "LAB SGA Export")
+    procedure PrintAssemblyOrder(var SGAiOrden: Record "LAB SGA Export")
     var
-        iOrdenLines: Record "LAB SGA Export";
-        PurchaseHeader: Record "Purchase Header";
-        SGAPostediOrden: Record "LAB SGA Posted iOrden";
-        SGAExportData: Codeunit "SGA Export Data";
-        counter: Integer;
+        SGASetup: Record "LAB SGA Setup";
+        ItemLedgerEntry: Record "Item Ledger Entry";
+        Location: Record Location;
+        JsonObjCus, JsonObjBody : JsonObject;
+        JsonArrayBody: JsonArray;
+        Url, TextBody : Text;
     begin
-        counter := 0;
-        if LABSGAExport.Type <> LABSGAExport.Type::Purchase then
-            exit;
+        SGASetup.Get();
+        SGASetup.TestField("URL API");
+        SGASetup.TestField("SGA Company Code");
 
-        SGAPostediOrden.SetRange("Document Type", LABSGAExport."Document Type");
-        SGAPostediOrden.SetRange("Document No.", LABSGAExport."Document No.");
-        SGAPostediOrden.SetRange("Table Number", Database::"Purchase Header");
-        if SGAPostediOrden.IsEmpty() then
-            Error('The purchase order has not been exported yet.');
+        ItemLedgerEntry.SetCurrentKey("Entry Type");
+        ItemLedgerEntry.SetRange("Entry Type", ItemLedgerEntry."Entry Type"::"Assembly Output");
+        ItemLedgerEntry.SetRange("Document Type", ItemLedgerEntry."Document Type"::"Posted Assembly");
+        ItemLedgerEntry.SetRange("Document No.", SGAiOrden."Document No.");
 
-        SGAPostediOrden.SetRange("Document Type", LABSGAExport."Document Type");
-        SGAPostediOrden.SetRange("Document No.", LABSGAExport."Document No.");
-        SGAPostediOrden.SetRange("Table Number", Database::"Purchase Line");
-        if SGAPostediOrden.IsEmpty() then
-            Error('No Purchase Order Lines exported yet.');
+        ItemLedgerEntry.FindSet();
+        repeat
+            Location.Get(ItemLedgerEntry."Location Code");
 
-        PurchaseHeader.Get(PurchaseHeader."Document Type"::Order, LABSGAExport."Document No.");
+            JsonObjBody.Add('CodigoEmpresa', SGASetup."SGA Company Code");
+            JsonObjBody.Add('CodigoDelegacion', '01');
+            JsonObjBody.Add('NumDocERP', ItemLedgerEntry."Document No.");
+            JsonObjBody.Add('LinDocERP', 1);
+            JsonObjBody.Add('CodigoArticulo', ItemLedgerEntry."Source No.");
+            JsonObjBody.Add('Cantidad', Abs(ItemLedgerEntry.Quantity));
+            JsonObjBody.Add('CodigoAlmacen', Location."LAB SGA Code");
+            JsonObjBody.Add('NumLote', ItemLedgerEntry."Lot No.");
+            if ItemLedgerEntry."Expiration Date" <> 0D then
+                JsonObjBody.Add('FechaCaducidad', ItemLedgerEntry."Expiration Date")
+            else
+                JsonObjBody.Add('FechaCaducidad', '');
+            JsonObjBody.Add('NumSerie', ItemLedgerEntry."Serial No.");
+            JsonObjBody.Add('Maquina', 'ET');
+            JsonObjBody.Add('AccionSGA', SGAiOrden."SGA Action");
+            JsonArrayBody.Add(JsonObjBody);
+        until ItemLedgerEntry.Next() = 0;
 
-        iOrdenLines.Reset();
-        iOrdenLines.SetCurrentKey(Type, "Document Type", "Document No.");
-        iOrdenLines.SetRange(Type, iOrdenLines.Type::Purchase);
-        iOrdenLines.SetRange("Document Type", PurchaseHeader."Document Type");
-        iOrdenLines.SetRange("Document No.", PurchaseHeader."No.");
-        iOrdenLines.SetRange(Status, 0);
-        iOrdenLines.SetRange("Table Number", Database::"Purchase Line");
-        if iOrdenLines.FindSet() then
-            repeat
-                counter := counter + 1;
-                SGAExportData.PostiOrden(iOrdenLines)
-            until iOrdenLines.Next() = 0;
+        JsonObjCus.Add('PRODUCTOACABADO', JsonArrayBody);
+        JsonObjCus.WriteTo(TextBody);
 
-        Message('%1 purchase order lines marked as exported.', counter);
-        CurrPage.Update();
+        TextBody := '[' + TextBody + ']';
+
+        Url := SGASetup."URL API" + 'Produccion/SetProductoAcabado';
+
+        Message(Url + '\\' + TextBody);
+
     end;
 }
