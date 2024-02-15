@@ -1,15 +1,16 @@
 codeunit 50999 "XYZ Update Your Ref."
 {
-    Subtype = Install;
+
 
     Permissions = tabledata "Sales Invoice Header" = rimd;
 
-    trigger OnInstallAppPerCompany()
+
+    trigger OnRun()
     begin
         UpdateYourReference();
     end;
 
-    local procedure UpdateYourReference()
+    procedure UpdateYourReference()
     var
         SalesHeader: Record "Sales Header";
         SalesLine: Record "Sales Line";
@@ -37,7 +38,7 @@ codeunit 50999 "XYZ Update Your Ref."
 
                     if SalesLine.FindSet() then
                         repeat
-                            if SalesShipmentHeader.Get(SalesLine."Shipment No.") and (SalesInvoiceHeader."Your Reference" <> '') then begin
+                            if SalesShipmentHeader.Get(SalesLine."Shipment No.") and (SalesShipmentHeader."Your Reference" <> '') then begin
                                 YourReference := SalesShipmentHeader."Your Reference";
                                 Counter += 1;
                             end;
@@ -66,7 +67,7 @@ codeunit 50999 "XYZ Update Your Ref."
 
                     if SalesInvoiceLine.FindSet() then
                         repeat
-                            if SalesShipmentHeader.Get(SalesInvoiceLine."Shipment No.") and (SalesInvoiceHeader."Your Reference" <> '') then begin
+                            if SalesShipmentHeader.Get(SalesInvoiceLine."Shipment No.") and (SalesShipmentHeader."Your Reference" <> '') then begin
                                 YourReference := SalesShipmentHeader."Your Reference";
                                 Counter += 1;
                             end;
