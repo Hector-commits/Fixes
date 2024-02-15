@@ -1,4 +1,4 @@
-codeunit 50859 "Delete Reservation Entry"
+codeunit 50999 "Delete Reservation Entry"
 {
     Permissions = tabledata "Reservation Entry" = rimd;
     procedure DeleteEntry(ResEntry: Record "Reservation Entry")

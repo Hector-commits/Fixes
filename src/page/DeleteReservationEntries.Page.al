@@ -1,4 +1,4 @@
-page 50859 "Delete Reservation Entries"
+page 50999 "Delete Reservation Entries"
 {
     UsageCategory = Lists;
     ApplicationArea = All;
