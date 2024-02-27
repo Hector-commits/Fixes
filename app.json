@@ -2,7 +2,7 @@
   "id": "34ce8ad0-0c51-45f5-8755-e3be5d9f9d7c",
   "name": "Fixes",
   "publisher": "IM-PROJECTS",
-  "version": "1.0.0.34",
+  "version": "1.3.0.6",
   "brief": "Fix Your Reference",
   "description": "Fix Your Reference",
   "privacyStatement": "https://www.im-projects.com/inicio/",
@@ -15,7 +15,30 @@
   "application": "18.0.0.0",
   "features": ["TranslationFile"],
   "dependencies": [
-
+    {
+      "id": "97e9514f-c63f-4c56-8582-0fd9adadedf3",
+      "publisher": "IM-PROJECTS",
+      "name": "Schemas",
+      "version": "1.0.0.0"
+    },
+    {
+      "id": "dd01c326-9558-463f-b6c3-50cbcdbfed8d",
+      "name": "Base",
+      "publisher": "IM-PROJECTS",
+      "version": "1.0.4.35"
+    },
+    {
+      "id": "23bf6eb4-cbe5-49f6-8b41-0b18502f9d48",
+      "name": "B2Bconnector",
+      "publisher": "Invinet Sistemes 2003, S.L.",
+      "version": "21.0.0.32"
+    },
+    {
+      "id": "e2ae191d-8829-44c3-a373-3749a2742d4d",
+      "name": "Service Declaration",
+      "publisher": "Microsoft",
+      "version": "23.3.14876.15232"
+    }
   ],
   "idRanges": [
     {

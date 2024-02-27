@@ -7,21 +7,21 @@ pageextension 50999 "XYZ - Posted Sales Inv." extends "Posted Sales Invoices"
     {
         addafter(Navigate)
         {
-            action("Update Your Reference")
+            action("Update Invoice Data")
             {
                 ApplicationArea = All;
-                Caption = 'Update Your Reference', Comment = 'ESP="Actualizar Referencia"';
+                Caption = 'Update Invoice Data', Comment = 'ESP="Actualiza datos facturas"';
                 Image = UpdateDescription;
                 Promoted = true;
                 PromotedCategory = Process;
                 PromotedIsBig = true;
-                ToolTip = 'Update Your Reference', Comment = 'ESP="Actualizar Referencia"';
+                ToolTip = 'Update Invoice Data', Comment = 'ESP="Actualizar datos facturas"';
 
                 trigger OnAction()
                 var
-                    XYZUpdateYourReference: Codeunit "XYZ Update Your Ref.";
+                    XYZUpdateReport: Report "XYZ Update Report";
                 begin
-                    XYZUpdateYourReference.Run();
+                    XYZUpdateReport.Run();
                 end;
             }
         }

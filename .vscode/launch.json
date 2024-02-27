@@ -1,55 +1,62 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Publish: Microsoft cloud sandbox",
+            "name": "snapshotInitialize: Microsoft production cloud",
             "type": "al",
-            "request": "launch",
-            "environmentType": "Sandbox",
-            "environmentName": "sandboxEDV",
-            "startupObjectId": 22,
-            "breakOnError": true,
-            "breakOnRecordWrite": false,
-            "launchBrowser": true,
-            "enableSqlInformationDebugger": true,
-            "enableLongRunningSqlStatements": true,
-            "longRunningSqlStatementsThreshold": 500,
-            "numberOfSqlStatements": 10
+            "request": "snapshotInitialize",
+            "environmentType": "Production",
+            "environmentName": "production",
+            "breakOnNext": "WebClient",
+            "executionContext": "DebugAndProfile"
         },
         {
-            "name": "Publish: Microsoft cloud sandbox",
+            "name": "Publish: Your own server",
             "type": "al",
             "request": "launch",
-            "environmentType": "Sandbox",
-            "environmentName": "sandbox270721",
-            "breakOnError": true,
-            "breakOnRecordWrite": false,
-            "launchBrowser": true,
-            "startupObjectType": "Report",
-            "startupObjectId": 50850,
-            "enableSqlInformationDebugger": true,
-            "enableLongRunningSqlStatements": true,
-            "longRunningSqlStatementsThreshold": 500,
-            "numberOfSqlStatements": 10
-        },
-        {
-            "name": "Your own server",
-            "request": "launch",
-            "type": "al",
             "environmentType": "OnPrem",
-            "server": "http://myCont",
+            "server": "http://mysb1",
             "serverInstance": "BC",
             "authentication": "UserPassword",
+            "startupObjectType": "Page",
+            "startupObjectId": 50106,
+            "breakOnError": true,
+            "breakOnRecordWrite": false,
+            "launchBrowser": true,
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "longRunningSqlStatementsThreshold": 500,
+            "numberOfSqlStatements": 10,
+            "tenant": "default",
+            "schemaUpdateMode": "ForceSync"
+        },
+        {
+            "name": "LabboxSandboxDev",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "Sandbox",
+            "environmentName": "LabboxSandboxDEV",
+            "startupObjectId": 143,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "schemaUpdateMode": "ForceSync"
+        },
+        {
+            "name": "LabboxSandboxPro",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "Sandbox",
+            "environmentName": "LabboxSandboxPRO",
             "startupObjectId": 22,
             "startupObjectType": "Page",
             "breakOnError": true,
             "launchBrowser": true,
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true,
-            "tenant": "default"
+            "schemaUpdateMode": "Synchronize"
         }
     ]
 }
