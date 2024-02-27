@@ -50,8 +50,6 @@ codeunit 50999 "XYZ Update Your Ref."
 
                         SalesHeader.SetHideValidationDialog(true);
 
-                        updatePaymentAndShipmentFields(SalesHeader, SalesShipmentHeader);
-
                         updateShiptoFields(SalesHeader, SalesShipmentHeader);
 
                         updateBilltoFields(SalesHeader, SalesShipmentHeader);
@@ -60,6 +58,8 @@ codeunit 50999 "XYZ Update Your Ref."
 
                         if not SalesOrderHeader.Get(SalesOrderHeader."Document Type"::Order, SalesShipmentHeader."Order No.") then
                             exit;
+
+                        updatePaymentAndShipmentFields(SalesHeader, SalesShipmentHeader);
 
                         ValidateAllB2RFields(SalesOrderHeader, SalesHeader);
 
@@ -100,14 +100,14 @@ codeunit 50999 "XYZ Update Your Ref."
 
                         updateShiptoFields(SalesInvoiceHeader, SalesShipmentHeader);
 
-                        updatePaymentAndShipmentFields(SalesInvoiceHeader, SalesShipmentHeader);
-
                         updateBilltoFields(SalesInvoiceHeader, SalesShipmentHeader);
 
                         updateForeignTradeFields(SalesInvoiceHeader, SalesShipmentHeader);
 
                         if not SalesOrderHeader.Get(SalesOrderHeader."Document Type"::Order, SalesShipmentHeader."Order No.") then
                             exit;
+
+                        updatePaymentAndShipmentFields(SalesInvoiceHeader, SalesShipmentHeader);
 
                         ValidateAllB2RFields(SalesOrderHeader, SalesInvoiceHeader);
 
