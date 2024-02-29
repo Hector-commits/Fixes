@@ -59,6 +59,8 @@ codeunit 50999 "XYZ Update Your Ref."
                         if not SalesOrderHeader.Get(SalesOrderHeader."Document Type"::Order, SalesShipmentHeader."Order No.") then
                             exit;
 
+                        updateBankAccFields(SalesHeader, SalesShipmentHeader);
+
                         updatePaymentAndShipmentFields(SalesHeader, SalesShipmentHeader);
 
                         ValidateAllB2RFields(SalesOrderHeader, SalesHeader);
@@ -106,6 +108,8 @@ codeunit 50999 "XYZ Update Your Ref."
 
                         if not SalesOrderHeader.Get(SalesOrderHeader."Document Type"::Order, SalesShipmentHeader."Order No.") then
                             exit;
+
+                        updateBankAccFields(SalesInvoiceHeader, SalesShipmentHeader);
 
                         updatePaymentAndShipmentFields(SalesInvoiceHeader, SalesShipmentHeader);
 
@@ -175,12 +179,12 @@ codeunit 50999 "XYZ Update Your Ref."
 
     local procedure updateBilltoFields(var SalesInvHeader: Record "Sales Invoice Header"; SalesShipmentHeader: Record "Sales Shipment Header")
     begin
-        SalesInvHeader.Validate("Bill-to Name", SalesShipmentHeader."Bill-to Name");
-        SalesInvHeader.Validate("Bill-to Name 2", SalesShipmentHeader."Bill-to Name 2");
-        SalesInvHeader.Validate("Bill-to Address", SalesShipmentHeader."Bill-to Address");
-        SalesInvHeader.Validate("Bill-to Address 2", SalesShipmentHeader."Bill-to Address 2");
-        SalesInvHeader.Validate("Bill-to Contact No.", SalesShipmentHeader."Bill-to Contact No.");
-        SalesInvHeader.Validate("Bill-to Contact", SalesShipmentHeader."Bill-to Contact");
+        SalesInvHeader."Bill-to Name" := SalesShipmentHeader."Bill-to Name";
+        SalesInvHeader."Bill-to Name 2" := SalesShipmentHeader."Bill-to Name 2";
+        SalesInvHeader."Bill-to Address" := SalesShipmentHeader."Bill-to Address";
+        SalesInvHeader."Bill-to Address 2" := SalesShipmentHeader."Bill-to Address 2";
+        SalesInvHeader."Bill-to Contact No." := SalesShipmentHeader."Bill-to Contact No.";
+        SalesInvHeader."Bill-to Contact" := SalesShipmentHeader."Bill-to Contact";
         //These fields are inter-related so we make assignments instead of Validations
         SalesInvHeader."Bill-to City" := SalesShipmentHeader."Bill-to City";
         SalesInvHeader."Bill-to Post Code" := SalesShipmentHeader."Bill-to Post Code";
@@ -190,18 +194,30 @@ codeunit 50999 "XYZ Update Your Ref."
 
     local procedure updateForeignTradeFields(var SalesInvHeader: Record "Sales Invoice Header"; SalesShipmentHeader: Record "Sales Shipment Header")
     begin
-        SalesInvHeader.Validate("Transaction Specification", SalesShipmentHeader."Transaction Specification");
-        SalesInvHeader.Validate("Transport Method", SalesShipmentHeader."Transport Method");
-        SalesInvHeader.Validate("Exit Point", SalesShipmentHeader."Exit Point");
-        SalesInvHeader.Validate("Area", SalesShipmentHeader."Area");
+        SalesInvHeader."Transaction Specification" := SalesShipmentHeader."Transaction Specification";
+        SalesInvHeader."Transport Method" := SalesShipmentHeader."Transport Method";
+        SalesInvHeader."Exit Point" := SalesShipmentHeader."Exit Point";
+        SalesInvHeader."Area" := SalesShipmentHeader."Area";
     end;
 
     local procedure updateForeignTradeFields(var SalesInvHeader: Record "Sales Header"; SalesShipmentHeader: Record "Sales Shipment Header")
     begin
-        SalesInvHeader.Validate("Transaction Specification", SalesShipmentHeader."Transaction Specification");
-        SalesInvHeader.Validate("Transport Method", SalesShipmentHeader."Transport Method");
-        SalesInvHeader.Validate("Exit Point", SalesShipmentHeader."Exit Point");
-        SalesInvHeader.Validate("Area", SalesShipmentHeader."Area");
+        SalesInvHeader."Transaction Specification" := SalesShipmentHeader."Transaction Specification";
+        SalesInvHeader."Transport Method" := SalesShipmentHeader."Transport Method";
+        SalesInvHeader."Exit Point" := SalesShipmentHeader."Exit Point";
+        SalesInvHeader."Area" := SalesShipmentHeader."Area";
+    end;
+
+    local procedure updateBankAccFields(var SalesInvHeader: Record "Sales Header"; SalesShipmentHeader: Record "Sales Shipment Header")
+    begin
+        SalesInvHeader.Validate("Company Bank Account Code", SalesShipmentHeader."Company Bank Account Code");
+        SalesInvHeader.Validate("Cust. Bank Acc. Code", SalesShipmentHeader."Cust. Bank Acc. Code");
+    end;
+
+    local procedure updateBankAccFields(var SalesInvHeader: Record "Sales Invoice Header"; SalesShipmentHeader: Record "Sales Shipment Header")
+    begin
+        SalesInvHeader.Validate("Company Bank Account Code", SalesShipmentHeader."Company Bank Account Code");
+        SalesInvHeader.Validate("Cust. Bank Acc. Code", SalesShipmentHeader."Cust. Bank Acc. Code");
     end;
 
     local procedure updatePaymentAndShipmentFields(var SalesInvHeader: Record "Sales Header"; SalesShipmentHeader: Record "Sales Shipment Header")
@@ -209,18 +225,18 @@ codeunit 50999 "XYZ Update Your Ref."
         SalesInvHeader.Validate("Payment Terms Code", SalesShipmentHeader."Payment Terms Code");
         SalesInvHeader.Validate("Payment Method Code", SalesShipmentHeader."Payment Method Code");
 
-        SalesInvHeader.Validate("Shipment Method Code", SalesShipmentHeader."Shipment Method Code");
-        SalesInvHeader.Validate("Shipping Agent Code", SalesShipmentHeader."Shipping Agent Code");
-        SalesInvHeader.Validate("Shipping Agent Service Code", SalesShipmentHeader."Shipping Agent Service Code");
+        SalesInvHeader."Shipment Method Code" := SalesShipmentHeader."Shipment Method Code";
+        SalesInvHeader."Shipping Agent Code" := SalesShipmentHeader."Shipping Agent Code";
+        SalesInvHeader."Shipping Agent Service Code" := SalesShipmentHeader."Shipping Agent Service Code";
     end;
 
     local procedure updatePaymentAndShipmentFields(var SalesInvoiceHeader: Record "Sales Invoice Header"; SalesShipmentHeader: Record "Sales Shipment Header")
     begin
-        SalesInvoiceHeader.Validate("Payment Terms Code", SalesShipmentHeader."Payment Terms Code");
-        SalesInvoiceHeader.Validate("Payment Method Code", SalesShipmentHeader."Payment Method Code");
+        SalesInvoiceHeader."Payment Terms Code" := SalesShipmentHeader."Payment Terms Code";
+        SalesInvoiceHeader."Payment Method Code" := SalesShipmentHeader."Payment Method Code";
 
-        SalesInvoiceHeader.Validate("Shipment Method Code", SalesShipmentHeader."Shipment Method Code");
-        SalesInvoiceHeader.Validate("Shipping Agent Code", SalesShipmentHeader."Shipping Agent Code");
+        SalesInvoiceHeader."Shipment Method Code" := SalesShipmentHeader."Shipment Method Code";
+        SalesInvoiceHeader."Shipping Agent Code" := SalesShipmentHeader."Shipping Agent Code";
         //SalesInvoiceHeader.Validate("Shipping Agent Service Code", SalesShipmentHeader."Shipping Agent Service Code");
     end;
 
