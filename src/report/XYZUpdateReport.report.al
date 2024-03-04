@@ -31,7 +31,7 @@ report 50999 "XYZ Update Report"
                 }
                 group(PostedSalesInvoice)
                 {
-                    Caption = 'Documentos en Borrador';
+                    Caption = 'Documentos Registrados';
 
                     field(forPostedSalesInvoiceC; forPostedSalesInvoices)
                     {
