@@ -26,6 +26,7 @@ table 50850 Label
         {
             DataClassification = CustomerContent;
             Caption = 'Data';
+            SubType = bitmap;
         }
     }
 
