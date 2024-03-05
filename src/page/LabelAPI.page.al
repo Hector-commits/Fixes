@@ -1,4 +1,4 @@
-page 50850 LabelAPI
+page 50851 LabelAPI
 {
     PageType = API;
     Caption = 'labelApi';
@@ -7,7 +7,7 @@ page 50850 LabelAPI
     APIVersion = 'v1.0';
     EntityName = 'label';
     EntitySetName = 'labels';
-    SourceTable = Label;
+    SourceTable = Item;
     DelayedInsert = true;
     ODataKeyFields = SystemId;
     //InsertAllowed = false;
@@ -18,21 +18,15 @@ page 50850 LabelAPI
         {
             repeater(GroupName)
             {
-                field(itemNo; "Item No.")
+                field(no; Rec."No.")
                 {
                     Caption = 'itemNo';
                 }
-                field(description; Description)
+                field(description; Rec.Description)
                 {
                     Caption = 'description';
                 }
-                /*
-                field(type; Type)
-                {
-                    Caption = 'type';
-                }
-                */
-                field(data; Data)
+                field(largeText; Rec."Large Text")
                 {
                     Caption = 'data';
                 }

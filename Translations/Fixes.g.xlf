@@ -3,270 +3,110 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="Fixes">
     <body>
       <group id="body">
-        <trans-unit id="Page 1913598160 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Remove Reservation Entries</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Eliminar mov. reserva"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 1754090622 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Action Message Adjustment field.</source>
+        <trans-unit id="Table 1457054730 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Label</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Action Message Adjustment - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Label - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 565903963 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Appl.-from Item Entry field.</source>
+        <trans-unit id="Table 1457054730 - Field 1447994436 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Data</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Appl.-from Item Entry - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Label - Field Data - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 3244334840 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Appl.-to Item Entry field.</source>
+        <trans-unit id="Table 1457054730 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Appl.-to Item Entry - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Label - Field Description - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 4221807355 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Binding field.</source>
+        <trans-unit id="Table 1457054730 - Field 568743302 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Binding - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Label - Field Item No. - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 4120197227 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Changed By field.</source>
+        <trans-unit id="Page 3397713418 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>labelApi</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Changed By - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page LabelAPI - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 3083748138 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Correction field.</source>
+        <trans-unit id="Page 3397713418 - Control 4232699882 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>description</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Correction - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page LabelAPI - Control description - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 2369664869 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the user who created the traced record.</source>
+        <trans-unit id="Page 3397713418 - Control 1172281100 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>data</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Created By - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page LabelAPI - Control largeText - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 1407200743 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies when the traced record was created.</source>
+        <trans-unit id="Page 3397713418 - Control 3179096107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>itemNo</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Creation Date - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page LabelAPI - Control no - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies a description of the record.</source>
+        <trans-unit id="Page 4147625293 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Picture Encoded Text Dialog</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Description - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Picture Encoded Text Dialog - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 1490912684 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Disallow Cancellation field.</source>
+        <trans-unit id="Page 4147625293 - Method 612767803 - NamedType 1398852855" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The existing picture will be replaced. Do you want to continue?</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Disallow Cancellation - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Picture Encoded Text Dialog - Method ImportPictureFromiEncodedText - NamedType OverrideImageQst</note>
         </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 883711285 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the number that is assigned to the entry.</source>
+        <trans-unit id="Page 4147625293 - Method 612767803 - NamedType 992573177" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You must add a description to the item before you can import a picture.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Entry No. - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Picture Encoded Text Dialog - Method ImportPictureFromiEncodedText - NamedType MustSpecifyDescriptionErr</note>
         </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 3469770434 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the date on which the reserved items are expected to enter inventory.</source>
+        <trans-unit id="Page 4147625293 - Control 1458141688 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Description</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Expected Receipt Date - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Picture Encoded Text Dialog - Control ItemDesc - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 1579714849 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the expiration date of the lot or serial number on the item tracking line.</source>
+        <trans-unit id="Page 4147625293 - Control 332802016 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Expiration Date - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Picture Encoded Text Dialog - Control ItemNo - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 2684044605 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Item Ledger Entry No. field.</source>
+        <trans-unit id="Page 4147625293 - Control 1606785853 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Picture Encoded Text</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Item Ledger Entry No. - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Picture Encoded Text Dialog - Control PictureEncodedTextDialog - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 568743302 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value from the same field on the physical inventory tracking line.</source>
+        <trans-unit id="PageExtension 410806293 - Method 612767803 - NamedType 1398852855" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 410806293">
+          <source>The existing picture will be replaced. Do you want to continue?</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Item No. - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ZYItemCardExt - Method ImportPictureFromiEncodedText - NamedType OverrideImageQst</note>
         </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 392666526 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Item Tracking field.</source>
+        <trans-unit id="PageExtension 410806293 - Method 612767803 - NamedType 992573177" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 410806293">
+          <source>You must add a description to the item before you can import a picture.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Item Tracking - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ZYItemCardExt - Method ImportPictureFromiEncodedText - NamedType MustSpecifyDescriptionErr</note>
         </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 2161572060 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the Location of the items that have been reserved in the entry.</source>
+        <trans-unit id="PageExtension 410806293 - Action 3484657201 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Convert Picture To Encoded Text</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Location Code - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ZYItemCardExt - Action ConvertPictureToEncodedText - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 1482668068 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the lot number of the item that is being handled with the associated document line.</source>
+        <trans-unit id="PageExtension 410806293 - Action 3644315871 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Transform API to Pic</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Lot No. - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ZYItemCardExt - Action Transform API to Pic - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 781519797 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the New Expiration Date field.</source>
+        <trans-unit id="PageExtension 410806293 - Control 879948460 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Large Text</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control New Expiration Date - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ZYItemCardExt - Control LargeText - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 891329008 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the New Lot No. field.</source>
+        <trans-unit id="PageExtension 444000389 - Action 612767803 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2078872523">
+          <source>Import Picture From Encoded Text</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control New Lot No. - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ZYItemPictureExt - Action ImportPictureFromiEncodedText - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 3028104211 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the New Package No. field.</source>
+        <trans-unit id="TableExtension 2559234521 - Field 4159188876 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+          <source>Large Text</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control New Package No. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 242005773 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the New Serial No. field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control New Serial No. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 4240543679 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the package number of the item that is being handled with the associated document line.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Package No. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 751190652 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Planning Flexibility field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Planning Flexibility - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 629037869 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies that the difference is positive.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Positive - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 806193894 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies how many of the base unit of measure are contained in one unit of the item.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Qty. per Unit of Measure - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 1442101329 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the quantity of item, in the base unit of measure, to be handled in a warehouse activity.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Qty. to Handle (Base) - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 2175328136 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the quantity, in the base unit of measure, that remains to be invoiced. It is calculated as Quantity - Qty. Invoiced.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Qty. to Invoice (Base) - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 2704404533 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the quantity of the record.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Quantity - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 3179217921 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the quantity of the item that has been reserved in the entry.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Quantity (Base) - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 3860038398 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Quantity Invoiced (Base) field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Quantity Invoiced (Base) - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 3579900824 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the status of the reservation.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Reservation Status - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 47037625 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the serial number of the item that is being handled on the document line.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Serial No. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 4112852368 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies when items on the document are shipped or were shipped. A shipment date is usually calculated from a requested delivery date plus lead time.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Shipment Date - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 3263329074 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the journal batch name if the reservation entry is related to a journal or requisition line.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Source Batch Name - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 345314420 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies which source ID the reservation entry is related to.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Source ID - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 370558406 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Source Prod. Order Line field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Source Prod. Order Line - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 627063663 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies a reference number for the line, which the reservation entry is related to.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Source Ref. No. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 205345179 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies which source subtype the reservation entry is related to.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Source Subtype - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 1753214751 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies for which source type the reservation entry is related to.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Source Type - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 2224719403 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Suppressed Action Msg. field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Suppressed Action Msg. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 577209412 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the SystemCreatedAt field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control SystemCreatedAt - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 4000648066 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the SystemCreatedBy field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control SystemCreatedBy - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 1367528460 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the SystemId field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control SystemId - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 2453272523 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the SystemModifiedAt field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control SystemModifiedAt - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 4085837753 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the SystemModifiedBy field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control SystemModifiedBy - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 1241919455 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies a value when the order tracking entry is for the quantity that remains on a document line after a partial posting.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Transferred from Entry No. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 391263709 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Untracked Surplus field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Untracked Surplus - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 3450651614 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the variant of the item on the line.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Variant Code - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Control 3135432252 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the last day of the serial/lot number's warranty.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Control Warranty Date - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Action 669491238 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Remove the selected entry.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Action RemoveEntry - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1913598160 - Action 669491238 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Remove Entry</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Eliminar mov."</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Remove Reservation Entries - Action RemoveEntry - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension ZYItemExt - Field Large Text - Property Caption</note>
         </trans-unit>
       </group>
     </body>
