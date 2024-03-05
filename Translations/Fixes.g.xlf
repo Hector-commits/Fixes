@@ -28,6 +28,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page LabelAPI - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 3397713418 - Method 612767803 - NamedType 1398852855" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The existing picture will be replaced. Do you want to continue?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page LabelAPI - Method ImportPictureFromiEncodedText - NamedType OverrideImageQst</note>
+        </trans-unit>
+        <trans-unit id="Page 3397713418 - Method 612767803 - NamedType 992573177" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You must add a description to the item before you can import a picture.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page LabelAPI - Method ImportPictureFromiEncodedText - NamedType MustSpecifyDescriptionErr</note>
+        </trans-unit>
         <trans-unit id="Page 3397713418 - Control 4232699882 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>description</source>
           <note from="Developer" annotates="general" priority="2"></note>

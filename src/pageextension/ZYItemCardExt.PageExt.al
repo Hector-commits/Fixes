@@ -89,17 +89,7 @@ pageextension 50850 ZYItemCardExt extends "Item Card"
     begin
         Rec.CalcFields("Large Text");
         Rec."Large Text".CreateInStream(InStream, TEXTENCODING::UTF8);
-        tempText := TypeHelper.TryReadAsTextWithSepAndFieldErrMsg(InStream, TypeHelper.LFSeparator(), Rec.FieldName("Large Text"));
-        JsonObject.ReadFrom(tempText);
-
-        JsonObject.Get('data', JsonToken);//extrae data a JsonToken
-
-        JsonToken.WriteTo(NewLargeText);//escribe JsonToken a la var de text que te diga
-
-        NewLargeText := DelChr(NewLargeText, '=', '"');
-
-        exit(tempText);
-
+        exit(TypeHelper.TryReadAsTextWithSepAndFieldErrMsg(InStream, TypeHelper.LFSeparator(), Rec.FieldName("Large Text")));
     end;
 
 
