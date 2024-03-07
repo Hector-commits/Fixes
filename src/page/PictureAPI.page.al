@@ -1,16 +1,15 @@
-page 50851 LabelAPI
+page 50851 "Picture API"
 {
     PageType = API;
-    Caption = 'labelApi';
-    APIPublisher = 'sd';
-    APIGroup = 'customapi';
+    Caption = 'pictureAPI';
+    APIPublisher = 'hp';
+    APIGroup = 'pictures';
     APIVersion = 'v1.0';
-    EntityName = 'label';
-    EntitySetName = 'labels';
+    EntityName = 'picture';
+    EntitySetName = 'picture';
     SourceTable = Item;
     DelayedInsert = true;
-    ODataKeyFields = SystemId;
-    //InsertAllowed = false;
+    InsertAllowed = false;
     DeleteAllowed = false;
     layout
     {
@@ -18,18 +17,9 @@ page 50851 LabelAPI
         {
             repeater(GroupName)
             {
-                field(no; Rec."No.")
+                field(no; Rec."No.") { }
+                field(base64Pic; base64Pic)
                 {
-                    Caption = 'itemNo';
-                }
-                field(description; Rec.Description)
-                {
-                    Caption = 'description';
-                }
-                field(largeText; largeText)
-                {
-                    Caption = 'data';
-
                     trigger OnValidate()
                     begin
                         ImportPictureFromiEncodedText();
@@ -39,19 +29,19 @@ page 50851 LabelAPI
         }
     }
     var
-        largeText: Text;
+        base64Pic: Text;
 
     procedure ImportPictureFromiEncodedText()
     var
+        TempBlob: Codeunit "Temp Blob";
+        Base64Convert: Codeunit "Base64 Convert";
         FileName: Text;
         InStr: InStream;
         OutStr: OutStream;
-        TempBlob: Codeunit "Temp Blob";
-        Base64Convert: Codeunit "Base64 Convert";
     begin
         FileName := Rec.Description + '.png';
         TempBlob.CreateOutStream(OutStr);
-        Base64Convert.FromBase64(largeText, OutStr);
+        Base64Convert.FromBase64(base64Pic, OutStr);
         TempBlob.CreateInStream(InStr);
         Clear(Rec.Picture);
         Rec.Picture.ImportStream(InStr, FileName);
