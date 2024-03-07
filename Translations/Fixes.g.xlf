@@ -28,6 +28,31 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table MyTable - Field Entry No. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 3687685431 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Code field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page First Subpage - Control Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3687685431 - Control 883711285 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Entry No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page First Subpage - Control Entry No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3687685431 - Control 577209412 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the SystemCreatedAt field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page First Subpage - Control SystemCreatedAt - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3687685431 - Control 4000648066 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the SystemCreatedBy field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page First Subpage - Control SystemCreatedBy - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1921996852 - Control 3923482911 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SubPage</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Main Page - Control FirstSubpage - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 1921996852 - Control 883711285 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>The unique identifier of the record.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -38,45 +63,20 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Main Page - Control Entry No. - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1921996852 - Control 218607484 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>SubPage</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Main Page - Control PartName - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 402336721 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 4055290761 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Code field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page SubPage - Control Code - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Second Subpage - Control Code - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 402336721 - Control 883711285 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Entry No. field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page SubPage - Control Entry No. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 402336721 - Control 577209412 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the SystemCreatedAt field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page SubPage - Control SystemCreatedAt - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 402336721 - Control 4000648066 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the SystemCreatedBy field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page SubPage - Control SystemCreatedBy - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 210041349 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Code field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page SubSubPage - Control Code - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 210041349 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 4055290761 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Description field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page SubSubPage - Control Description - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Second Subpage - Control Description - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 210041349 - Control 577209412 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 4055290761 - Control 577209412 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the SystemCreatedAt field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page SubSubPage - Control SystemCreatedAt - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Second Subpage - Control SystemCreatedAt - Property ToolTip</note>
         </trans-unit>
       </group>
     </body>

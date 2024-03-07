@@ -18,32 +18,25 @@ page 50850 "Main Page"
                     ToolTip = 'The unique identifier of the record.';
                 }
             }
-            part(PartName; "SubPage")
+            part(FirstSubpage; "First Subpage")
+
             {
                 ApplicationArea = All;
                 Caption = 'SubPage';
                 SubPageLink = "Entry No." = field("Entry No.");
                 UpdatePropagation = SubPart;
+
+
             }
-            part(AnothePart; SubSubPage)
+            part(SecondSubpage; "Second Subpage")
             {
                 ApplicationArea = All;
                 UpdatePropagation = SubPart;
+                Provider = FirstSubpage;
+                SubPageLink = "Code" = field("Code");
             }
         }
 
     }
-    trigger OnAfterGetCurrRecord()
-    var
-        MyThirdTable: Record "My Third Table";
-    begin
-        currCode := CurrPage.PartName.Page.getCurrCode();
-        MyThirdTable.SetRange(Code, currCode);
-        CurrPage.AnothePart.Page.SetTableView(MyThirdTable);
-        CurrPage.AnothePart.Page.Update();
-    end;
-
-    var
-        currCode: Code[10];
 
 }

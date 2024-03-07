@@ -1,9 +1,9 @@
-page 50851 "SubPage"
+page 50853 "Second Subpage"
 {
     PageType = ListPart;
     ApplicationArea = All;
     UsageCategory = Administration;
-    SourceTable = "My Sub Table";
+    SourceTable = "My Third Table";
 
     layout
     {
@@ -11,41 +11,27 @@ page 50851 "SubPage"
         {
             repeater(Group)
             {
+
                 field("Code"; Rec."Code")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Code field.';
                 }
-                field("Entry No."; Rec."Entry No.")
+                field(Description; Rec.Description)
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Entry No. field.';
+                    ToolTip = 'Specifies the value of the Description field.';
                 }
                 field(SystemCreatedAt; Rec.SystemCreatedAt)
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the SystemCreatedAt field.';
                 }
-                field(SystemCreatedBy; Rec.SystemCreatedBy)
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the SystemCreatedBy field.';
-                }
             }
         }
-
     }
-    trigger OnAfterGetCurrRecord()
+    procedure setPageFilter(cod: Code[10])
     begin
-        currCode := Rec.Code;
+        Rec.SetRange(Code, cod);
     end;
-
-
-    procedure getCurrCode(): Code[10]
-    begin
-        exit(currCode);
-    end;
-
-    var
-        currCode: Code[10];
 }
