@@ -15,12 +15,17 @@
   "application": "18.0.0.0",
   "features": ["TranslationFile"],
   "dependencies": [
-
+    {
+    "id": "3371bae3-a899-441a-95df-adc96cd1fbf3",
+    "name": "IM E-Procurement",
+    "publisher": "IM-PROJECTS",
+    "version": "1.0.0.42"
+    }
   ],
   "idRanges": [
     {
-      "from": 50850,
-      "to": 50859
+      "from": 50999,
+      "to": 50999
     }
   ],
   "contextSensitiveHelpUrl": "https://Test_salesLine.com/help/",
