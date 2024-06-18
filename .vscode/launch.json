@@ -40,7 +40,7 @@
             "request": "launch",
             "type": "al",
             "environmentType": "OnPrem",
-            "server": "http://myCont",
+            "server": "http://mysb1",
             "serverInstance": "BC",
             "authentication": "UserPassword",
             "startupObjectId": 22,
