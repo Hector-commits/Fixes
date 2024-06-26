@@ -38,6 +38,15 @@ report 50999 "Load Data"
                         Caption = 'Number of Lines per Order';
                         ToolTip = 'Enter the number of lines to create per order.';
                     }
+                    field(linkDocuments; linkDocs)
+                    {
+                        Enabled = CreateOrderHeaders;
+                        ApplicationArea = All;
+                        Caption = 'Link Documents';
+                        ToolTip = 'Enable to link documents to the order lines.';
+
+                    }
+
                 }
             }
         }
@@ -47,6 +56,10 @@ report 50999 "Load Data"
     var
         OrderHeader: Record "MBC B2B OrderHeader";
         OrderLines: Record "MBC B2B OrderLines";
+        PurchaseHeader: Record "Purchase Header";
+        TransferHeader: Record "Transfer Header";
+        PurchRcptHeader: Record "Purch. Rcpt. Header";
+        TransferReceiptHeader: Record "Transfer Receipt Header";
         RandomText: Text[20];
         RandomNumber: Integer;
         i, j : Integer;
@@ -74,6 +87,27 @@ report 50999 "Load Data"
 
                 OrderHeader.Insert();
 
+                if linkDocs then begin
+
+                    PurchaseHeader.Get(PurchaseHeader."Document Type"::Order, GetRandomPurchaseHeaderNo());
+                    PurchaseHeader."Vendor Order No." := OrderHeader.Code;
+                    PurchaseHeader.Modify();
+
+                    TransferHeader.Get(GetRandomTransferHeaderNo());
+                    TransferHeader."External Document No." := OrderHeader.Code;
+                    TransferHeader.Modify();
+
+                    PurchRcptHeader.Get(GetRandomPurchRcptHeaderNo());
+                    PurchRcptHeader."Vendor Order No." := OrderHeader.Code;
+                    PurchRcptHeader.Modify();
+
+                    TransferReceiptHeader.Get(GetRandomTransferReceiptHeaderNo());
+                    TransferReceiptHeader."External Document No." := OrderHeader.Code;
+                    TransferReceiptHeader.Modify();
+
+                end;
+
+
                 for j := 1 to NoOfLines do begin
                     OrderLines.Init();
                     OrderLines.No := 0;
@@ -98,10 +132,12 @@ report 50999 "Load Data"
                     OrderLines.Insert();
                 end;
             end;
+
+
     end;
 
     var
-        CreateOrderHeaders, DeleteOrderHeader : Boolean;
+        CreateOrderHeaders, DeleteOrderHeader, linkDocs, linkRcpts : Boolean;
         NoOfRecords, NoOfLines : Integer;
 
     local procedure GenerateRandomText(Length: Integer): Text[500]
@@ -177,6 +213,111 @@ report 50999 "Load Data"
         end;
     end;
 
+    local procedure GetRandomPurchaseHeaderNo(): Code[20]
+    var
+        PurchaseHeader: Record "Purchase Header";
+        Count: Integer;
+        RandomIndex: Integer;
+    begin
+        PurchaseHeader.SetRange("Document Type", PurchaseHeader."Document Type"::Order);
+        PurchaseHeader.SetRange("No.");
+        if PurchaseHeader.FindSet then begin
+            // Count the total number of Purchase Headers
+            Count := 0;
+            repeat
+                Count += 1;
+            until PurchaseHeader.Next() = 0;
+
+            // Get a random index within the range of Purchase Headers
+            RandomIndex := GenerateRandomNumber(1, Count);
+
+            // Loop again to get the Purchase Header at the random index
+            PurchaseHeader.SetRange("Document Type", PurchaseHeader."Document Type"::Order);
+            PurchaseHeader.FindSet;
+            for Count := 1 to RandomIndex do
+                PurchaseHeader.Next();
+
+            exit(PurchaseHeader."No.");
+        end;
+    end;
+
+    local procedure GetRandomTransferHeaderNo(): Code[20]
+    var
+        TransferHeader: Record "Transfer Header";
+        Count: Integer;
+        RandomIndex: Integer;
+    begin
+        TransferHeader.SetRange("No.");
+        if TransferHeader.FindSet then begin
+            // Count the total number of Transfer Headers
+            Count := 0;
+            repeat
+                Count += 1;
+            until TransferHeader.Next() = 0;
+
+            // Get a random index within the range of Transfer Headers
+            RandomIndex := GenerateRandomNumber(1, Count);
+
+            // Loop again to get the Transfer Header at the random index
+            TransferHeader.FindSet;
+            for Count := 1 to RandomIndex do
+                TransferHeader.Next();
+
+            exit(TransferHeader."No.");
+        end;
+    end;
+
+    local procedure GetRandomPurchRcptHeaderNo(): Code[20]
+    var
+        PurchRcptHeader: Record "Purch. Rcpt. Header";
+        Count: Integer;
+        RandomIndex: Integer;
+    begin
+        PurchRcptHeader.SetRange("No.");
+        if PurchRcptHeader.FindSet then begin
+            // Count the total number of Purchase Receipt Headers
+            Count := 0;
+            repeat
+                Count += 1;
+            until PurchRcptHeader.Next() = 0;
+
+            // Get a random index within the range of Purchase Receipt Headers
+            RandomIndex := GenerateRandomNumber(1, Count);
+
+            // Loop again to get the Purchase Receipt Header at the random index
+            PurchRcptHeader.FindSet;
+            for Count := 1 to RandomIndex do
+                PurchRcptHeader.Next();
+
+            exit(PurchRcptHeader."No.");
+        end;
+    end;
+
+    local procedure GetRandomTransferReceiptHeaderNo(): Code[20]
+    var
+        TransferReceiptHeader: Record "Transfer Receipt Header";
+        Count: Integer;
+        RandomIndex: Integer;
+    begin
+        TransferReceiptHeader.SetRange("No.");
+        if TransferReceiptHeader.FindSet then begin
+            // Count the total number of Transfer Receipt Headers
+            Count := 0;
+            repeat
+                Count += 1;
+            until TransferReceiptHeader.Next() = 0;
+
+            // Get a random index within the range of Transfer Receipt Headers
+            RandomIndex := GenerateRandomNumber(1, Count);
+
+            // Loop again to get the Transfer Receipt Header at the random index
+            TransferReceiptHeader.FindSet;
+            for Count := 1 to RandomIndex do
+                TransferReceiptHeader.Next();
+
+            exit(TransferReceiptHeader."No.");
+        end;
+    end;
 
     local procedure GetRandomUnitOfMeasureCode(ItemNo: Code[20]): Code[20]
     var
