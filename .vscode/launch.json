@@ -44,6 +44,22 @@
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true,
             "schemaUpdateMode": "ForceSync"
+        },
+        {
+            "name": "BPVPRE",
+            "request": "launch",
+            "tenant": "05ff3299-00ad-4e14-bf7c-c70a1d316185",
+            "startupCompany": "Hotel Rhin",
+            "type": "al",
+            "environmentType": "Sandbox",
+            "environmentName": "BPVPRE",
+            "startupObjectId": 50204,//List of PMS Invoices
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "schemaUpdateMode": "ForceSync"
         }
     ]
 }

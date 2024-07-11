@@ -15,6 +15,12 @@
   "application": "18.0.0.0",
   "features": ["TranslationFile"],
   "dependencies": [
+    {
+      "id": "8db621c0-42a1-438d-92da-088d89a3906d",
+      "name": "IM PMS Integration",
+      "publisher": "IM-PROJECTS",
+      "version": "1.0.0.1"
+    }
 
   ],
   "idRanges": [
