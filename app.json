@@ -16,10 +16,10 @@
   "features": ["TranslationFile"],
   "dependencies": [
     {
-    "id": "3371bae3-a899-441a-95df-adc96cd1fbf3",
-    "name": "IM E-Procurement",
+    "id": "41a1b9a8-69de-4a28-90a7-6110cfff9b75",
+    "name": "E-Procurement",
     "publisher": "IM-PROJECTS",
-    "version": "1.0.0.42"
+    "version": "1.0.0.0"
     }
   ],
   "idRanges": [

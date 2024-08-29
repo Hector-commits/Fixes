@@ -1,4 +1,4 @@
-pageextension 50999 "Load Data" extends "MBCB2BConfigurationCard"
+pageextension 50999 "Load Data" extends "MBC EPR Setup"
 {
     actions
     {
