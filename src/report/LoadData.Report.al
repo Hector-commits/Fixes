@@ -60,10 +60,12 @@ report 50999 "Load Data"
         TransferHeader: Record "Transfer Header";
         PurchRcptHeader: Record "Purch. Rcpt. Header";
         TransferReceiptHeader: Record "Transfer Receipt Header";
+        TransLine: Record "Transfer Line";
         RandomText: Text[20];
         RandomNumber: Integer;
         i, j : Integer;
     begin
+        /*
         if DeleteOrderHeader then begin
             OrderLines.DeleteAll();
             OrderHeader.DeleteAll();
@@ -117,7 +119,7 @@ report 50999 "Load Data"
                     OrderLines.UnitofMeasure := GetRandomUnitOfMeasureCode(OrderLines."Item No.");
                     OrderLines."Vendor No." := GetRandomVendorNo();
                     OrderLines.Processed := GenerateRandomNumber(0, 1);
-                    OrderLines.Location := OrderHeader."Store Code";
+                    OrderLines."Location Code" := OrderHeader."Store Code";
                     OrderLines."Item Description" := GetItemDescription(OrderLines."Item No.");
                     OrderLines."Vendor Name" := GetVendorName(OrderLines."Vendor No.");
                     OrderLines."Order Code" := OrderHeader.Code;
@@ -132,7 +134,40 @@ report 50999 "Load Data"
                     OrderLines.Insert();
                 end;
             end;
+        */
+        /*
+        TransferHeader.Reset();
+        TransferHeader.Init();
+        TransferHeader."No." := '';
+        TransferHeader.Insert(true);
+        TransferHeader.Validate("Transfer-from Code", 'ESTE');
+        TransferHeader.Validate("Transfer-to Code", 'OESTE');
+        //   TransferHeader."Direct Transfer" := true;
+        TransferHeader.Validate("External Document No.", 'DOC');
+        TransferHeader.Modify();
 
+
+        transline.Init();
+
+        transline.Validate("Document No.", TransferHeader."No.");
+        transline.validate("Line No.", 10000); //???
+        transline.validate("Item No.", '1968-S');
+        transline.validate(Quantity, -1);
+
+        transline.Insert(true);
+
+        transline.Reset();
+        //Transfers.SETRANGE("Entry No.", eOrden."Table Entry No.");
+        //Transfers.SetRange("Status BC", Transfers."Status BC"::Pending); //CAMBIAR A OPTION? 0
+        //Transfers.SETRANGE("ID Company", eOrden."ID ICG Company");
+        */
+        transline.setfilter(quantity, '<%1', 0);
+        IF not transline.ISEMPTY THEN
+            Error('No se permiten cantidades negativas en transferencias');
+
+        transline.SetRange(Quantity);
+        transline.Findset();
+        Message(Format(transline));
 
     end;
 

@@ -22,6 +22,24 @@ pageextension 50999 "Load Data" extends "MBC EPR Setup"
                     LoadData.Run();
                 end;
             }
+            action(LoadTestData2)
+            {
+
+                ApplicationArea = All;
+                Caption = 'Load Test Data2';
+                Image = Database;
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                ToolTip = 'Load test data into the system.';
+
+                trigger OnAction()
+                var
+                    LoadData2: Report "Load Data2";
+                begin
+                    LoadData2.Run();
+                end;
+            }
             action(CheckPostCode)
             {
 
